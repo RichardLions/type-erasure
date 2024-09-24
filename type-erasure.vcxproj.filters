@@ -16,6 +16,15 @@
     <None Include="vcpkg-configuration.json">
       <Filter>Misc</Filter>
     </None>
+    <None Include=".gitattributes">
+      <Filter>Misc</Filter>
+    </None>
+    <None Include=".gitignore">
+      <Filter>Misc</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Misc</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Misc">
