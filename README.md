@@ -1,10 +1,17 @@
 # Type Erasure
 
-This pattern was inspired by [Type Erasure](https://www.youtube.com/watch?v=qn6OqefuH08&ab_channel=CppCon).
+This pattern was inspired by Klaus Iglberger's presentations:
+* [Type Erasure 2021](https://youtu.be/4eeESJQk-mw)
+* [Type Erasure 2022](https://youtu.be/qn6OqefuH08)
+* [Type Erasure 2023](https://youtu.be/7MNyAHp0h7A)
 
 ## When To Use
 
+...
+
 ## Features
+
+...
 
 ## Setup
 
@@ -40,7 +47,7 @@ To create a clean vcpkg.json and vcpkg-configuration.json file run:
 vcpkg new --application
 ```
 
-TODO:
-- [ ] Implementation
-- [ ] Unit Tests
-- [ ] Benchmarks
+### TODO
+- [x] Implementation
+- [x] Unit Tests
+- [x] Benchmarks

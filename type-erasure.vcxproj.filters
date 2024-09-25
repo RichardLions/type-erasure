@@ -2,6 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="typeoperations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig">
@@ -30,5 +31,11 @@
     <Filter Include="Misc">
       <UniqueIdentifier>{b7971d91-aeac-4a5b-bc35-0fb7237342a3}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="typeoperations.h" />
+    <ClInclude Include="typeerasuretype.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="examples.h" />
   </ItemGroup>
 </Project>

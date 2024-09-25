@@ -135,6 +135,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="typeoperations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
@@ -144,6 +145,12 @@
     <None Include="README.md" />
     <None Include="vcpkg-configuration.json" />
     <None Include="vcpkg.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="examples.h" />
+    <ClInclude Include="typeerasuretype.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="typeoperations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
