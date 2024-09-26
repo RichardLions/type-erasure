@@ -36,6 +36,6 @@
     <ClInclude Include="typeoperations.h" />
     <ClInclude Include="typeerasuretype.h" />
     <ClInclude Include="types.h" />
-    <ClInclude Include="examples.h" />
+    <ClInclude Include="typeerasureexamples.h" />
   </ItemGroup>
 </Project>

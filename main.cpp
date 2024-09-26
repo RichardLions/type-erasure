@@ -1,6 +1,6 @@
 #include <catch2/catch_session.hpp>
 
-#include "examples.h"
+#include "typeerasureexamples.h"
 
 int main(const int argc, const char* const argv[])
 {

@@ -147,7 +147,7 @@
     <None Include="vcpkg.json" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="examples.h" />
+    <ClInclude Include="typeerasureexamples.h" />
     <ClInclude Include="typeerasuretype.h" />
     <ClInclude Include="types.h" />
     <ClInclude Include="typeoperations.h" />
