@@ -42,14 +42,14 @@ public:
     }
 
     /// Unsafe - Used by Unit Tests
-    template<class T>
-    const T* IsType() const
+    template<class TType>
+    const TType* IsType() const
     {
-        const TypeModel<T>* const type{dynamic_cast<TypeModel<T>*>(m_Pimpl.get())};
+        const TypeModel<TType>* const type{dynamic_cast<TypeModel<TType>*>(m_Pimpl.get())};
         if(!type)
             return nullptr;
 
-        return dynamic_cast<const T*>(&type->m_Type);
+        return dynamic_cast<const TType*>(&type->m_Type);
     }
 
 private:
