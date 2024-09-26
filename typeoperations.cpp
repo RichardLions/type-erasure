@@ -1,22 +1,22 @@
 #include "typeoperations.h"
 #include "types.h"
 
-void OperationA(TypeA& item)
+void OperationA(TypeA& type)
 {
-    item.SetInt(1);
+    type.SetInt(1);
 }
 
-void OperationA(TypeB& item)
+void OperationA(TypeB& type)
 {
-    item.SetFloat(1.0f);
+    type.SetFloat(1.0f);
 }
 
-void OperationB(TypeA& item)
+void OperationB(TypeA& type)
 {
-    item.SetInt(-1);
+    type.SetInt(-1);
 }
 
-void OperationB(TypeB& item)
+void OperationB(TypeB& type)
 {
-    item.SetFloat(-1.0f);
+    type.SetFloat(-1.0f);
 }

@@ -7,11 +7,66 @@ This pattern was inspired by Klaus Iglberger's presentations:
 
 ## When To Use
 
-...
+Type Erasure decouples operations from types by using external polymorphism. Allowing for easy addition of new types.
+
+General:
+
+* Easy to add types over adding operations.
+* Types do not have dependency on operations.
+* Restricts the operations to the public interface of the types.
+* Enables a value semantic interface to promote simple natural code.
 
 ## Features
 
-...
+Create a Type:
+```cpp
+class TypeA
+{
+public:
+};
+```
+
+Create an Operation:
+```cpp
+// Free function to handle TypeA
+void OperationA(TypeA& type)
+{
+}
+
+// Add OperationA to Type::TypeConcept. See typeerasuretype.h
+class TypeConcept
+{
+public:
+    ...
+    virtual void OperationA() = 0;
+};
+
+// Call OperationA within Type::TypeModel. See typeerasuretype.h
+template<class TType>
+class TypeModel final : public TypeConcept
+{
+public:
+    ...
+    void OperationA() override
+    {
+        ::OperationA(m_Type); // Call the free function that handles this Operation/TType combination.
+    }
+
+    TType m_Type{};
+};
+```
+
+Call an Operation:
+```cpp
+using Types = std::vector<Type>;
+
+Types types{}
+types.emplace_back(TypeA{});
+for(Type& type : types)
+{
+    type.OperationA();
+}
+```
 
 ## Setup
 
